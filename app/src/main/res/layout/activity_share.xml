@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:focusable="true"
+                                             android:focusableInTouchMode="true"
+                                             android:orientation="vertical"
+android:background="@drawable/gradient_background">
+    <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profileImageView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/com_facebook_profile_picture_blank_portrait"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000" android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="32dp" app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/name"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/profileImageView" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp"/>
+
+    <TextView
+            android:id="@+id/userNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/username"
+            app:layout_constraintTop_toBottomOf="@+id/nameTextView"
+            app:layout_constraintStart_toStartOf="@+id/nameTextView"
+            app:layout_constraintEnd_toEndOf="@+id/nameTextView" android:textSize="24sp" android:textStyle="italic"
+            android:textColor="#585D5E"/>
+
+    <TextView
+            android:id="@+id/connectedWithTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/connected_with"
+            app:layout_constraintTop_toBottomOf="@+id/userNameTextView"
+            app:layout_constraintEnd_toEndOf="@+id/userNameTextView"
+            app:layout_constraintStart_toStartOf="@+id/userNameTextView" android:textStyle="bold"
+            android:textSize="18sp"/>
+    <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp" app:srcCompat="@drawable/twitter"
+            android:id="@+id/twitterIcon" app:layout_constraintStart_toEndOf="@+id/connectedWithTextView"
+            app:layout_constraintTop_toTopOf="@+id/connectedWithTextView"/>
+    <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25sp" app:srcCompat="@drawable/face"
+            android:id="@+id/facebookIcon"
+            app:layout_constraintTop_toTopOf="@+id/connectedWithTextView"
+            app:layout_constraintStart_toStartOf="@+id/twitterIcon"/>
+
+
+</android.support.constraint.ConstraintLayout>

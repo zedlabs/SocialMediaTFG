@@ -1,0 +1,18 @@
+<resources>
+    <string name="link_hint">Add link to share</string>
+    <string name="tweet_posted">Tweet Sent!!!</string>
+    <string name="facebook_posted">Status Posted…</string>
+    <string name="cannot_be_empty">Message cannot be empty</string>
+    <string name="welcome_to_sharetastic">WELCOME TO SHARE ACTIVITY</string>
+    <string name="name">Name</string>
+    <string name="username">Username</string>
+    <string name="_0_240">0/240</string>
+    <string name="connected_with">Connected with:</string>
+    <string name="write_something_to_share">Write something to share…</string>
+    <string name="post">POST</string>
+    <string name="Twitter_CONSUMER_KEY">... </string>
+    <string name="Twitter_CONSUMER_SECRET">... </string>
+    <string name="app_name">SocialMediaTGF</string>
+    <string name="facebook_app_id">...</string>
+    <string name="fb_login_protocol_scheme">...</string>
+</resources>
