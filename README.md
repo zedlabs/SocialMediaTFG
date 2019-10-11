@@ -1,2 +1,2 @@
 # SocialMediaTFG
-social media android integration
+social media login integration with Oauth 
