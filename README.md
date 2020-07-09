@@ -1,3 +1,4 @@
 # SocialMediaTFG
-social media login integration with Oauth 
-to login to facebook, Twitter
+social media login integration with Oauth
+for facebook, twitter login 
+
